@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+
+  
+
+  
+  <h1><span style="color: red;">inventory</span> management.</h1>
+
+
+  <nav>
+    <ul class="navbar">
+      <li><a href="#">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      
+      
+    </ul>
+  </nav>
+  
+  <div class="form-container"> 
+    <form id = "inventory-form">  
+    <h3> add item </h3>
+    <label for="iname">item <span class = label-red> name </span></label><br>
+    <input type="text" id="iname" name="iname"><br>
+    <label for="id">item <span class = label-red> description </span></label><br>
+    <input type="text" id="id" name="id"> <br>
+    <label for="price">item <span class = label-red> price </span></label><br>
+    <input type="number" id="price" name="price"> <br>
+    <label for="quan">item <span class = label-red> quantity </span></label><br>
+    <input type="number" id="quan" name="quan"> <br>
+    <label for="url">item <span class = label-red> image </span> (url)</label><br>
+    <input type="text" id="url" name="url"> <br>
+    <button type="submit"  id = "sub_button" >Add Item</button>
+    <button type="reset">Reset</button>
+
+  </form> 
+  </div>
+
+  <h1> Item <span class = label-red> Inventory </span></h1> 
+  <div class = "sort-button">
+    <button   id = "sort-butt" >Sort Quantity</button>
+
+  </div>
+  <div class = "delete-button">
+    <button   id = "delete-butt" >Clear Inventory</button>
+
+  </div>
+
+  <div id="itemList"></div>
+  
+
+  <script src="script.js"></script>
+  <script src="backend.js"></script>
+
+  
+</body>
+</html>
